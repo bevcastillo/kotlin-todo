@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashboardActivity"
+    android:fillViewport="true"
+    android:scrollbars="none"
+    android:overScrollMode="never"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:background="#FEFEFE">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center|start"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/DayTXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/questrial"
+                    android:textStyle="bold"
+                    android:text="24"
+                    android:textColor="@color/nero"
+                    android:textSize="28dp"
+                    android:layout_alignParentLeft="true"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/DayTXT">
+
+                    <TextView
+                        android:id="@+id/monthTXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/questrial"
+                        android:text="NOV"
+                        android:textAllCaps="true"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="@color/nero"/>
+
+                    <TextView
+                        android:id="@+id/yearTXT"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/questrial"
+                        android:text="2016"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="@color/nero" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/dayOfWeekTXT"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/questrial"
+                    android:textStyle="bold"
+                    android:text="Tuesday"
+                    android:textColor="@color/nero"
+                    android:textSize="14dp"
+                    android:textAllCaps="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"/>
+
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/todoRV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:clipToPadding="false"
+                tools:listitem="@layout/adapter_todo"
+                android:overScrollMode="never" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/createTaskBTN"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:elevation="3dp"
+                    app:cardCornerRadius="4dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_gravity="bottom|end"
+                    android:backgroundTint="@color/purple_500">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="22dp"
+                            android:src="@drawable/ic_add"
+                            app:tint="@color/white" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="New Goal"
+                            android:textColor="@color/white"
+                            android:textStyle="bold"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginRight="10dp"/>
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+</LinearLayout>
