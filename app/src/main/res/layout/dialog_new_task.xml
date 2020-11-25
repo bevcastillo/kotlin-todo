@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:padding="20dp">
 
-    <LinearLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -16,7 +16,8 @@
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:src="@drawable/ic_close"
-            app:tint="@android:color/background_dark"/>
+            app:tint="@android:color/background_dark"
+            android:layout_centerVertical="true"/>
 
         <TextView
             android:id="@+id/dayOfWeekTXT"
@@ -24,18 +25,19 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/questrial"
             android:textStyle="bold"
-            android:text="Create Goal"
+            android:text="Create New Goal"
             android:textColor="@color/nero"
             android:textSize="18dp"
             android:layout_gravity="center"
-            android:gravity="center"/>
+            android:gravity="center"
+            android:layout_centerVertical="true"/>
 
-    </LinearLayout>
+    </RelativeLayout>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Select Color"
+        android:text="Pick a color"
         android:fontFamily="@font/questrial"
         android:layout_marginTop="30dp"/>
 
@@ -46,6 +48,7 @@
         android:layout_marginTop="10dp">
 
         <LinearLayout
+            android:id="@+id/redBTN"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="40dp"
@@ -64,6 +67,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/yellowBTN"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="40dp"
@@ -83,6 +87,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/greenBTN"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="40dp"
@@ -103,6 +108,7 @@
 
 
         <LinearLayout
+            android:id="@+id/orangeBTN"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="40dp"
@@ -122,6 +128,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/pinkBTN"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="40dp"
@@ -141,6 +148,7 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/skyBTN"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="40dp"

@@ -11,10 +11,10 @@
     <color name="nero">#282828</color>
     <color name="white_smoke">#ececec</color>
 
-    <color name="red">#FE654F</color>
-    <color name="champagne">#FED18C</color>
-    <color name="green">#008148</color>
-    <color name="orange">#F18F01</color>
-    <color name="pink">#E8998D</color>
-    <color name="sky">#42F2F7</color>
+    <color name="red">#FFFE654F</color>
+    <color name="champagne">#FFFED18C</color>
+    <color name="green">#FF008148</color>
+    <color name="orange">#FFF18F01</color>
+    <color name="pink">#FFF368e0</color>
+    <color name="sky">#FF54a0ff</color>
 </resources>
